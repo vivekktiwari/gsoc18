@@ -2,7 +2,7 @@
 Project Summary Report
 
 
-##### Organization: [P Project for Statistical Computing](https://github.com/rstats-gsoc)
+##### Organization: [R Project for Statistical Computing](https://github.com/rstats-gsoc)
 
 ##### Student: [Vivek Kumar](https://github.com/vivekktiwari)
 
