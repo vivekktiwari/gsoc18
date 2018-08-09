@@ -16,9 +16,7 @@ Project Summary Report
 ------------------------------------
 
 ### Introduction
-The initial motive behind this GSoC project was to translate Animint Designer Manual to animint2 code, and create additional chapters to further document animint2 usage. The objective was to compile a designer manual for animint2 package that will outline different function, resolve issues and guide user to the package. So far there was no proper equivalent documentation to animint2. This was to be the official documentation on animint2 package of R Language.
-
-The `ggplot2` dependency has been a major issue as `animint2` is dependent on it. Further work done by past contributors reduced the dependency which resulted in two separate packages `ggplot2Animint` and `animint2`. `ggplot2Animint` is `animint2` specific package used to support the changes needed which were not accepted earlier. As we moved long in the project, movtive changed to continue the work on `animint2` done by fellow contributors and make package ready for CRAN submissions.
+The initial motive behind this GSoC project was to translate Animint Designer Manual to animint2 code, and create additional chapters to further document animint2 usage. The objective was to compile a designer manual for animint2 package that will outline different function, resolve issues and guide user to the package. So far there was no proper equivalent documentation to animint2. This was to be the official documentation on animint2 package of R Language. The `ggplot2` dependency has been a major issue as `animint2` is dependent on it. Further work done by past contributors reduced the dependency which resulted in two separate packages `ggplot2Animint` and `animint2`. `ggplot2Animint` is `animint2` specific package used to support the changes needed which were not accepted earlier. As we moved long in the project, movtive changed to continue the work on `animint2` done by fellow contributors and make package ready for CRAN submissions.
 ------------------------------------
 
 ### First Evaluation
