@@ -47,7 +47,7 @@ a_geom_point(a_aes(xVar, yVar),
   showSelected=c("showVar1", "showVar2", selector.name="selector.value"))
 
 ```
-There still new internal functions are too be renamed to which are hard to find and are being used by same name in the environment by both packages. 
+There still few internal functions are too be renamed to which are hard to find and are being used by same name in the environment by both packages. 
 
 ------------------------------------
 
