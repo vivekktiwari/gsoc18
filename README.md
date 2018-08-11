@@ -39,7 +39,7 @@ After merging both the packages, main task was to make sure `animint2` and `ggpl
 # Older syntax
 geom_point(aes(xVar, yVar), 
   clickSelects="clickVar", 
-  showSelected=c("showVar", "showVar2", selector.name="selector.value"))
+  showSelected=c("showVar1", "showVar2", selector.name="selector.value"))
 
 # New syntax
 a_geom_point(a_aes(xVar, yVar),
