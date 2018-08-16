@@ -11,7 +11,7 @@ Project Summary Report
 ------------------------------------
 
 ### Abstract
-`animint2` is an R package that allows you to create interactive and animated multi-layer, multi-plot data visualizations designed with ggplot2. `animint2` renders using javascript library D3.js. It helps in understanding patterns in large and multi-variate datasets. The aim of the project was to document, render, debug the already exsiting `animint2` which the latest version of `animint` 
+`animint2` is a R package that allows you to create interactive and animated multi-layer, multi-plot data visualizations designed with ggplot2. `animint2` renders using javascript library D3.js. It helps in understanding patterns in large and multi-variate datasets. The aim of the project was to document, render, debug the already exsiting `animint2` which the latest version of `animint` 
 
 ------------------------------------
 
