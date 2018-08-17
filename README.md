@@ -21,18 +21,18 @@ The initial motive behind the GSoC project was to translate Animint Designer Man
 ------------------------------------
 
 ### First Evaluation
-During the first evaluation, major work involved cleaning the `animint2` code and documentation for making it ready for CRAN submission (animint2 issue [#12](https://github.com/tdhock/animint2/issues/12)). This included removing outdate package version, declaring global variables, parameters and basic documentation. As we moved forward, it was decided to first clean `ggplot2Animint` code and internals first on which `animint2` is dependent. It was planned to submit both packages separately for cran. The further work on cleaning `ggplot2Animint` was done on [cran branch of faizan khan's rep of forked ggplot2](https://github.com/faizan-khan-iit/ggplot2/tree/cran).
+During the first evaluation, major work involved cleaning the `animint2` code and documentation for making it ready for CRAN submission (animint2 issue [#12](https://github.com/tdhock/animint2/issues/12)). This included removing the outdated package version, declaring global variables, parameters and basic documentation. As we moved forward, it was decided to clean the `ggplot2Animint` code and internals first. It was planned to submit both packages separately for CRAN. The further work on cleaning `ggplot2Animint` was done on [`cran` branch of Faizan Khan's repo of forked ggplot2](https://github.com/faizan-khan-iit/ggplot2/tree/cran).
 
 ------------------------------------
 
 ### Second Evaluation
-After cleaning `ggplot2Animint` code for cran submission, we started testing using the package with other R packages including `ggplot2` which resulted in failed testcases (Issue [#4](https://github.com/faizan-khan-iit/ggplot2/issues/4)). The possible solution suggested was to merge the `ggplot2Animint` and `animint2` so that we can have a better understanding of error and changes done in `ggplot2Animint` which also resulted in failed testcases in `animint2` was well. Merged code will also allow us to submit only single package to cran. The second evaluation period was spend on merging both the packages into one to remove the dependency. The complete work on merging was done in [merge branch of animint2](https://github.com/tdhock/animint2/tree/merge). 
+After cleaning `ggplot2Animint` code for CRAN submission, we started testing the package with other R packages including `ggplot2` which resulted in failed testcases (Issue [#4](https://github.com/faizan-khan-iit/ggplot2/issues/4)). The possible solution suggested was to merge the `ggplot2Animint` and `animint2` so that we can have a better understanding of error and changes done in `ggplot2Animint` which also resulted in failed testcases in `animint2` was well. Merging the code had the added advantage of submitting only a single package to CRAN. The second evaluation period was spent on merging both the packages into one to remove the dependency. The complete work on merging was done in [`merge` branch of `animint2`](https://github.com/tdhock/animint2/tree/merge). 
 
 
 ------------------------------------
 
 ### Final Evaluation
-After merging both the packages, main task was to make sure `animint2` and `ggplot2` work together in same environment, inorder to achieve it, I started working on renaming all the `ggplot2` functions imported from `ggplot2Animint`. `ggplot2` contains more than 500+ functions which were renamed to avoid nameclash so that both functions work independently. Renaming the functions have also resulted in new syntax and functions mentioned below:
+After merging both the packages, main task was to make sure `animint2` and `ggplot2` work together in same environment. For this purpose, I started working on renaming all the `ggplot2` functions imported from `ggplot2Animint`. `ggplot2` contains more than 500+ functions which were renamed to avoid nameclash so that both functions work independently. Renaming the functions have also resulted in new syntax and functions mentioned below:
 
 
 ```
@@ -47,7 +47,7 @@ a_geom_point(a_aes(xVar, yVar),
   showSelected=c("showVar1", "showVar2", selector.name="selector.value"))
 
 ```
-There still few internal functions are to be renamed which are hard to find and are being used through same name in the environment by both packages (`ggplot2` and `animint2`).
+There are still a few internal functions left to be renamed which are hard to find and are being used through same name in the environment by both packages (`ggplot2` and `animint2`).
 
 ------------------------------------
 
@@ -62,5 +62,5 @@ The links to all the commits are given below:
 ------------------------------------
 
 ### Future Work
-The end goal involves further renaming of few internal functions imported from `ggplot2` code, documentation of `animint2` functions, making `animint2` more ready for cran submission and finally submitting `animint2` to cran.
+The end goal involves further renaming of few internal functions imported from `ggplot2` code, documentation of `animint2` functions, making `animint2` ready for CRAN submission and finally submitting `animint2` to CRAN.
 
